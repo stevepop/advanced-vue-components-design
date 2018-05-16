@@ -5,6 +5,7 @@ import UserSettingsForm from "@/components/UserSettingsForm.vue"
 import ExternalLib from "@/components/pages/ExternalLib.vue"
 import ModalPage from "@/components/pages/ModalPage.vue"
 import NativeButtonPage from "@/components/pages/NativeButtonPage.vue"
+import ContactsPage from "@/components/pages/ContactsPage.vue"
 
 Vue.use(VueRouter)
 
@@ -29,6 +30,11 @@ export default new VueRouter({
         path: '/button-slots',
         name: 'button-slots',
         component: NativeButtonPage
+      },
+      {
+        path: '/contacts-page',
+        name: 'contacts-page',
+        component: ContactsPage
       }
     ]
   })

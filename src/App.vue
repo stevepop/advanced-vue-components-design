@@ -9,6 +9,7 @@
            <router-link :to="{ name: 'external-lib'}" class="block no-underline text-grey py-2">Wrapping External Libraries</router-link>
            <router-link :to="{ name: 'modal-page'}" class="block no-underline text-grey py-2">Closing on Escape/background scrolling</router-link>
            <router-link :to="{ name: 'button-slots'}" class="block no-underline text-grey py-2">Modals / Component Composition / Slots</router-link>
+           <router-link :to="{ name: 'contacts-page'}" class="block no-underline text-grey py-2">Passing Data Up Using Scoped Slots</router-link>
         </div>
       </div>
       <div class="w-3/4">
@@ -30,6 +31,11 @@ export default {
 <style>
   @import url('./assets/styles/main.css');
   @import url('./assets/styles/pickaday.css');
+
+  .router-link-exact-active {
+    background:#8795a1;
+    color: white;
+  }
 
 </style>
 
