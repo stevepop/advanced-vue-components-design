@@ -2,7 +2,7 @@
   <div class="min-h-screen text-center">
       <h3 class="text-black mb-6">Render Function</h3>
       <div class="flex justify-center">
-           <render-function tag="button"></render-function>
+           <render-function></render-function>
       </div>
   </div>
 </template>

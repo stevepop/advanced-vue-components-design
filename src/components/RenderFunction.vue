@@ -1,20 +1,26 @@
+
+
 <script>
+import PrimaryButton from "./PrimaryButton"
+import ToggleInput from "./ToggleInput"
 export default {
-  props: ['tag'],
 
+  props: [],
   data () {
-      return {}
+    return {
+        toggled: true
+    }
   },
-
-  render (createElement) {
-      return createElement (this.tag, {
-          attrs: {
-              class: 'btn btn-blue'
-          },
-          on: {
-              click: () => alert('clicked')
-          }
-      }, 'Hello world!')
+  render(createElement) {
+    return createElement(ToggleInput, {
+        props: {
+            value: this.toggled
+        },
+        on: {
+            input: (newValue) => this.toggled = newValue
+        }
+    })
   }
 }
 </script>
+
