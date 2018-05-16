@@ -12,6 +12,7 @@
            <router-link :to="{ name: 'contacts-page'}" class="block no-underline text-grey py-2">Passing Data Up Using Scoped Slots</router-link>
            <router-link :to="{ name: 'render-functions'}" class="block no-underline text-grey py-2">Render Functions</router-link>
            <router-link :to="{ name: 'render-children'}" class="block no-underline text-grey py-2">Render Functions and Children</router-link>
+           <router-link :to="{ name: 'render-slot-page'}" class="block no-underline text-grey py-2">Render Functions and Slots</router-link>
         </div>
       </div>
       <div class="w-3/4">

@@ -8,6 +8,7 @@ import NativeButtonPage from "@/components/pages/NativeButtonPage.vue"
 import ContactsPage from "@/components/pages/ContactsPage.vue"
 import RenderFunctionPage from "@/components/pages/RenderFunctionPage.vue"
 import RenderChildrenPage from "@/components/pages/RenderChildrenPage.vue"
+import RenderSlotPage from "@/components/pages/RenderSlotPage.vue"
 
 
 Vue.use(VueRouter)
@@ -48,6 +49,11 @@ export default new VueRouter({
         path: '/render-children',
         name: 'render-children',
         component: RenderChildrenPage
+      },
+      {
+        path: '/render-slot-page',
+        name: 'render-slot-page',
+        component: RenderSlotPage
       }
     ]
   })
