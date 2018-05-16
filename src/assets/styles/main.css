@@ -1,0 +1,236 @@
+/**
+ * This injects Tailwind's base styles, which is a combination of
+ * Normalize.css and some additional base styles.
+ *
+ * You can see the styles here:
+ * https://github.com/tailwindcss/tailwindcss/blob/master/css/preflight.css
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/preflight";
+ */
+
+@tailwind preflight;
+/**
+  * This injects any component classes registered by plugins.
+  *
+  * If using `postcss-import`, use this import instead:
+  *
+  * @import "tailwindcss/components";
+  */
+
+@tailwind components;
+/**
+  * Here you would add any of your custom component classes; stuff that you'd
+  * want loaded *before* the utilities so that the utilities could still
+  * override them.
+  *
+  * Example:
+  *
+  * .btn { ... }
+  * .form-input { ... }
+  *
+  * Or if using a preprocessor or `postcss-import`:
+  *
+  * @import "components/buttons";
+  * @import "components/forms";
+  */
+
+/**
+  * This injects all of Tailwind's utility classes, generated based on your
+  * config file.
+  *
+  * If using `postcss-import`, use this import instead:
+  *
+  * @import "tailwindcss/utilities";
+  */
+
+.btn-blue {
+  @apply .bg-blue .text-white .font-bold .py-2 .px-4 .border-b-4 .border-blue-dark .rounded
+}
+
+.btn-blue:hover {
+  @apply .bg-blue-light .border-blue
+}
+
+.card,
+.modal {
+  background-color: #fff;
+  border-radius: 0.25rem;
+  padding: 2rem;
+  -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11), 0 5px 15px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11), 0 5px 15px 0 rgba(0, 0, 0, 0.08);
+}
+
+.form-input {
+  display: block;
+  width: 100%;
+  color: #22292f;
+  border-width: 1px;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+}
+
+.form-input:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 3px rgba(52, 144, 220, 0.5);
+  box-shadow: 0 0 0 3px rgba(52, 144, 220, 0.5);
+}
+
+.form-label {
+  display: block;
+  color: #606f7b;
+  font-weight: 600;
+}
+
+.toggle {
+  position: relative;
+  display: inline-block;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  border-radius: 9999px;
+  cursor: pointer;
+  height: 1.5rem;
+  width: 3rem;
+}
+
+.toggle:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 4px rgba(52, 144, 220, 0.5);
+  box-shadow: 0 0 0 4px rgba(52, 144, 220, 0.5);
+}
+
+.toggle:before {
+  display: inline-block;
+  border-radius: 9999px;
+  height: 100%;
+  width: 100%;
+  background-color: #dae1e7;
+  content: "";
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+
+.toggle[aria-checked="true"]:before {
+  background-color: #3490dc;
+}
+
+.toggle:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 9999px;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: #fff;
+  border-width: 1px;
+  border-color: #dae1e7;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  content: "";
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.toggle[aria-checked="true"]:after {
+  -webkit-transform: translateX(1.5rem);
+  transform: translateX(1.5rem);
+}
+
+.btn-blue {
+  background-color: #3490dc;
+  color: #fff;
+}
+
+.btn-blue:hover {
+  background-color: #2779bd;
+}
+
+.btn-blue:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 3px rgba(52, 144, 220, 0.5);
+  box-shadow: 0 0 0 3px rgba(52, 144, 220, 0.5);
+}
+
+.btn-indigo {
+  background-color: #6574cd;
+  color: #fff;
+}
+
+.btn-indigo:hover {
+  background-color: #5661b3;
+}
+
+.btn-indigo:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 3px rgba(101, 116, 205, 0.5);
+  box-shadow: 0 0 0 3px rgba(101, 116, 205, 0.5);
+}
+
+.btn-grey {
+  background-color: #f1f5f8;
+  color: #3d4852;
+}
+
+.btn-grey:hover {
+  background-color: #dae1e7;
+}
+
+.btn-grey:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 3px rgba(52, 144, 220, 0.5);
+  box-shadow: 0 0 0 3px rgba(52, 144, 220, 0.5);
+}
+
+.btn-red {
+  background-color: #e3342f;
+  color: #fff;
+}
+
+.btn-red:hover {
+  background-color: #cc1f1a;
+}
+
+.btn-red:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 3px rgba(227, 52, 47, 0.5);
+  box-shadow: 0 0 0 3px rgba(227, 52, 47, 0.5);
+}
+
+.btn-indigo-outline {
+  border-width: 1px;
+  border-color: #6574cd;
+  color: #6574cd;
+}
+
+.btn-indigo-outline:hover {
+  background-color: #6574cd;
+  color: #fff;
+}
+
+.btn-pill {
+  line-height: 1.5;
+  border-radius: 9999px;
+}
+
+@tailwind utilities;
+/**
+  * Here you would add any custom utilities you need that don't come out of the
+  * box with Tailwind.
+  *
+  * Example :
+  *
+  * .bg-pattern-graph-paper { ... }
+  * .skew-45 { ... }
+  *
+  * Or if using a preprocessor or `postcss-import`:
+  *
+  * @import "utilities/background-patterns";
+  * @import "utilities/skew-transforms";
+  */
