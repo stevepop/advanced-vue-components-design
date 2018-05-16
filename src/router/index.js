@@ -7,6 +7,7 @@ import ModalPage from "@/components/pages/ModalPage.vue"
 import NativeButtonPage from "@/components/pages/NativeButtonPage.vue"
 import ContactsPage from "@/components/pages/ContactsPage.vue"
 import RenderFunctionPage from "@/components/pages/RenderFunctionPage.vue"
+import RenderChildrenPage from "@/components/pages/RenderChildrenPage.vue"
 
 
 Vue.use(VueRouter)
@@ -42,6 +43,11 @@ export default new VueRouter({
         path: '/render-functions',
         name: 'render-functions',
         component: RenderFunctionPage
+      },
+      {
+        path: '/render-children',
+        name: 'render-children',
+        component: RenderChildrenPage
       }
     ]
   })
