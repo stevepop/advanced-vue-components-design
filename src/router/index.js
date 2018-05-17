@@ -9,6 +9,7 @@ import ContactsPage from "@/components/pages/ContactsPage.vue"
 import RenderFunctionPage from "@/components/pages/RenderFunctionPage.vue"
 import RenderChildrenPage from "@/components/pages/RenderChildrenPage.vue"
 import RenderSlotPage from "@/components/pages/RenderSlotPage.vue"
+import DataProviderPage from "@/components/pages/DataProviderPage.vue"
 
 
 Vue.use(VueRouter)
@@ -54,6 +55,11 @@ export default new VueRouter({
         path: '/render-slot-page',
         name: 'render-slot-page',
         component: RenderSlotPage
+      },
+      {
+        path: '/data-provider-page',
+        name: 'data-provider-page',
+        component: DataProviderPage
       }
     ]
   })
